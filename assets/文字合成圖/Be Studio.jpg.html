@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/css/custom.css" rel="stylesheet">
+  <link href="../../assets/css/theme.css" rel="stylesheet">
+  <title>特快車圖庫</title>
+</head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../../index.html">特快車圖庫</a>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li>
+      <a href="https://github.com/nkj20932/power-build">GitHub</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">類別<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <!-- <li><a href="#">Inbox</a></li> -->
+          
+            <li>
+              <a href="../../assets/大頭貼/index.html">大頭貼</a>
+            </li>
+          
+            <li>
+              <a href="../../assets/文字合成圖/index.html">文字合成圖</a>
+            </li>
+          
+            <li>
+              <a href="../../assets/綜合/index.html">綜合</a>
+            </li>
+          
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="page-header"><a href="../../index.html">總覽</a> > <a href="index.html">文字合成圖</a> > Be Studio.jpg</h1>
+          <img class="image-responsive single-image" src="../../images/文字合成圖/Be Studio.jpg" alt="">
+          <div class="text-center">
+            <div class="btn btn-lg btn-success download" id="copy">複製圖片連結</div>
+            <a class="btn btn-lg btn-primary download" href="../../images/文字合成圖/Be Studio.jpg" download="Be Studio.jpg" >下載</a>
+            <a class="btn btn-lg btn-default home" href="../../index.html">首頁</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <footer>
+  <div class="row">
+    
+      <div class="copyright col-lg-12 text-center">
+        <p>版權所有 特快車圖庫 2015</p>
+      </div>
+    
+  </div>
+  <script src="../../assets/js/jquery.js"></script>
+  <script src="../../assets/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/theme.js"></script>
+  <script src="../../assets/js/custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zclip/1.1.2/jquery.zclip.min.js"></script>
+</footer>
+<!-- The credit of this design goes to David Miller -->
+<!-- Check more for detail: http://startbootstrap.com/template-overviews/thumbnail-gallery/ -->
+
+
+    </div>
+    <script>
+      $(document).ready(function(){
+        var host = window.location.origin;
+        var index = window.location.pathname.indexOf("/assets");
+        var pathname = window.location.pathname.substring(0,index);
+        var path_prefix = host + pathname + "/";
+        var resource = "../../images/文字合成圖/Be Studio.jpg";
+        var resource_path = resource.substring(6,200);
+        var image_link = path_prefix + resource_path;
+        $("#copy").zclip({
+          path: "https://cdnjs.cloudflare.com/ajax/libs/zclip/1.1.2/ZeroClipboard.swf",
+          copy: image_link,
+          afterCopy: function(){console.log("text copied!");}
+        });
+      });
+    </script>
+  </body>
+</html>
